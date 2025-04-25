@@ -185,7 +185,7 @@ const App = () => {
         <h1>
           <TypewriterComponent
             options={{
-              strings: "Bem-vind@s a Aceleradora Inclusiva - Turma 2025!",
+              strings: "Sejam bem-vind@s a Aceleradora Inclusiva - Turma 2025!",
               autoStart: true,
               loop: true,
               delay: 100,
