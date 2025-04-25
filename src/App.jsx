@@ -6,6 +6,7 @@ import styles from "./WelcomePage.module.css";
 import clickSoundFile from "./assets/sounds/click.mp3";
 import bugSoundFile from "./assets/sounds/bug.mp3";
 import winSoundFile from "./assets/sounds/win.mp3";
+import TypewriterComponent from "typewriter-effect";
 
 const timelineItems = [
   { label: "Git/GitHub", icon: "🐙" },
@@ -181,7 +182,16 @@ const App = () => {
       {showConfetti && <Confetti recycle={false} numberOfPieces={500} />}
 
       <header className={styles.header}>
-        <h1>Bem-vind@s a Aceleradora Inclusiva - Turma 2025!</h1>
+        <h1>
+          <TypewriterComponent
+            options={{
+              strings: "Bem-vind@s a Aceleradora Inclusiva - Turma 2025!",
+              autoStart: true,
+              loop: true,
+              delay: 100,
+            }}
+          />
+        </h1>
         <button
           onClick={() => setDarkMode(!darkMode)}
           className={styles.toggleMode}
